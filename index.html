@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/contaminar.jpg','imagenes/consecuencias1.jpg','imagenes/reciclaje.jpg','imagenes/reforestar.jpg','imagenes/parapente.jpg')">
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Medio Ambiente</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+</div>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/mi_comunidad.jpg" alt="mi comunidad" title="mi comunidad" id="wows1_0"/></li>
+		<li><img src="data1/images/comunidad.jpg" alt="comunidad" title="comunidad" id="wows1_1"/></li>
+		<li><img src="data1/images/cristorey.jpg" alt="cristorey" title="cristorey" id="wows1_2"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/mientorno.jpg" alt="jquery slideshow" title="mientorno" id="wows1_3"/></a></li>
+		<li><img src="data1/images/parapente.jpg" alt="parapente" title="parapente" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="mi comunidad"><span><img src="data1/tooltips/mi_comunidad.jpg" alt="mi comunidad"/>1</span></a>
+		<a href="#" title="comunidad"><span><img src="data1/tooltips/comunidad.jpg" alt="comunidad"/>2</span></a>
+		<a href="#" title="cristorey"><span><img src="data1/tooltips/cristorey.jpg" alt="cristorey"/>3</span></a>
+		<a href="#" title="mientorno"><span><img src="data1/tooltips/mientorno.jpg" alt="mientorno"/>4</span></a>
+		<a href="#" title="parapente"><span><img src="data1/tooltips/parapente.jpg" alt="parapente"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">slider</a> by WOWSlider.com v8.7</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+<li class="ui-fisrt-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Definicion</h2>
+<p>Se muestra una definicion</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de contaminacion</h2>
+<p>Se mostraran algunos</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consecuencias de la contaminacion</h2>
+<p>Se mostraran algunas consecuencias</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Reciclaje</h2>
+<p>Se mostraran algunos metodos de reciclaje</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Como controlar la contaminacion</h2>
+<p>Muestra algunos metodos de como controlarla</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminacion en mi entorno</h2>
+<p>Muestra algunos problemas de contaminacion</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <div>
+    <img src="imagenes/logo.jpg" width="100" height="64">
+  </div>
+<div>
+  <h4> Aplicacion Tres</h4>
+  <h4>Maria de los Angeles Lopez Tecalero</h4>
+  </div>
+  </div>
+  </div>
+  
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Definicion</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>El medio ambiente o medioambiente es el conjunto de componentes físicos, químicos, y biológicos externos con los que interactúan los seres vivos.1 Respecto al ser humano, comprende el conjunto de factores naturales, sociales y culturales existentes en un lugar y en un momento determinado, que influyen en su vida y afectarán a las generaciones futuras.</h2>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres, MALT</h4>
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>MedioAmbiente</h1>
+<div>
+<img src="imagenes/medio.jpg" width="50%" height="50%"/>
+<p>Esta es la imagen del medio ambiente </p>
+</div>
+<div>
+</div>
+</div>
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Medio Ambiente</h1>
+<div>
+<p>Esta es la imagen del medio ambiente</p>
+</div>
+<div>
+<img src="imagenes/ambiente.jpg" width="50%" height="50%"/>
+</div>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Tipos de contaminacion</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son:
+<ol type="i">
+<ul>Contaminación del Agua</ul>
+<p align="center" >Como su nombre lo sugiere, “Contaminación del agua” es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.</p>
+<ul>Contaminación del Aire</ul>
+<p align="center">El monóxido de carbono y óxido de azufre se consideran contaminantes primarios. Estos contaminantes sufren cambios químicos y causan efectos secundarios tales como smog. La contaminación del aire se define por la existencia y la integración de los compuestos tóxicos en el ambiente en concentraciones lo suficientemente altas como para causar daño a los seres humanos, los animales y el medio ambiente de la Tierra.</p>
+<ul>Contaminación del Suelo</ul>
+<p align="center">La contaminación del suelo se refiere a la contaminación del suelo por medio de exceso de fertilizantes, productos químicos, insecticidas, herbicidas, pesticidas, etc provocan contaminación del suelo en la disminución de la calidad del suelo y es causada por la erosión del suelo, el exceso o déficit de humedad, disminución de la nutrientes para las plantas o microorganismos del suelo, y la fluctuación de la temperatura alta.</p>
+<ul>Contaminación Térmica</ul>
+<p align="center">Es un hecho bien conocido que la quema de combustibles fósiles en centrales eléctricas, hornos industriales y motores de vehículos causa la contaminación del aire. Sin embargo, un menor impacto conocido asociado con estos procesos de generación de energía es la contaminación térmica. La contaminación térmica se refiere a la adición de grandes cantidades de calor residual para el medio ambiente, las causas de la contaminación térmica son casi las mismas que las que causa la contaminación del aire.</p></ol></h2>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Tres, MALT</h4>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminacion</h1>
+<div>
+<img src="imagenes/contaminacion.jpg" width="50%" height="50%"/>
+<p>Esta es la imagen del medio ambiente contaminado </p>
+</div>
+</div>
+ <div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion Medio Ambiente</h1>
+<div>
+<p>Esta es la imagen del medio ambiente contaminado</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/contaminar.jpg',1)"><img src="imagenes/contaminacion1.jpg" width="275" height="183" id="Image6"></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Consecuencias de la contaminacion</h1>
+    </div>
+    <div data-role="content" align="center">
+      <div>
+         <h2>Las consecuencias son bastantes te mostrare algunas:
+        <ol type="i">
+        <ul>Consecuencias de la contaminacion del agua</ul>
+         <p align="center"> Residuos Domesticos: Los residuos domésticos se genera a través de diversas actividades del hogar. Esta residuos domésticos contiene materiales orgánicos e inorgánicos tales como fosfatos y nitratos. La gente suele tirar la basura en la fuente de agua cercana, lo que conduce a las enfermedades, como la diarrea.
+Residuos Agricolas – Los fertilizantes químicos y los pesticidas se utilizan en las granjas agrícolas en grandes cantidades. En el caso de las precipitaciones, los escurrimientos de los campos agrícolas obtienen la mezcla haciendo que el agua contamine, que a su vez contamina las fuentes de agua como ríos, arroyos y lagos.</p>
+<ul>Consecuencias de la contaminacion del aire</ul>
+<p align="center">La quema de combustibles fósiles emite monóxido de carbono y óxido de azufre. Automóviles, autobuses, aviones y cualquier forma de gas como combustible de transporte emiten gases de monóxido de carbono a través de sistemas de escape. El dióxido de azufre se crea a través de la combustión de carbón, y está asociado con los residuos industriales. Los procesos de fabricación utilizan carbón como combustible, liberando dióxido de azufre en el aire a través de los sistemas de escape de fábrica.</p>
+<ul>Consecuencias de la contaminacion del suelo</ul>
+<p align="center">Hay varias causas que conducen a la contaminación del suelo. Las principales fuentes de contaminación del suelo incluyen – la deforestación, los incendios forestales, la erosión del suelo, la erupción volcánica, el uso excesivo de fertilizantes químicos, pesticidas, herbicidas, etc, y el vertido de residuos industriales y urbanos.</p>
+<ul>Consecuencias de la contaminacion termica</ul>
+<p align="center">El dispositivo que convierte el calor en otras formas útiles de energía se llama un motor térmico</p></ol></h2></div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion Tres, MALT</h4>
+        </div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+<h1>Contaminacion</h1>
+<div>
+<p>Esta es la imagen del medio ambiente contaminado </p>
+</div>
+<img src="imagenes/contaminantes.jpg" width="50%" height="50%"/>
+</div>
+</div>
+ <div data-role="collapsible" data-content-theme="false">
+<h1> Contaminacion Medio Ambiente</h1>
+<div>
+<p>Esta es la imagen del medio ambiente contaminado</p>
+</div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/consecuencias1.jpg',1)"><img src="imagenes/consecuencias.jpg" width="500" height="333" id="Image8"></a></div>
+ 
+     
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Reciclaje </h1>
+    </div>
+<div data-role="content" align="center">
+      <div>
+        <h2>El reciclaje es un proceso cuyo objetivo es convertir desechos en nuevos productos o en materia para su posterior utilización.
+
+Gracias al reciclaje se previene el desuso de materiales potencialmente útiles, se reduce el consumo de nueva materia prima, además de reducir el uso de energía, la contaminación del aire (a través de la incineración) y del agua (a través de los vertederos), así como también disminuir las emisiones de gases de efecto invernadero en comparación con la producción de plásticos.
+
+El reciclaje es un componente clave en la reducción de desechos contemporáneos y es el tercer componente de las 3R (“Reducir, Reciclar, Reutilizar”).
+
+Los materiales reciclables son muchos, e incluyen todo el papel y cartón, el vidrio, los metales ferrosos y no ferrosos, algunos plásticos, telas y textiles, maderas y componentes electrónicos. En otros casos no es posible llevar a cabo un reciclaje debido a la dificultad técnica o alto coste del proceso, de modo que suele reutilizarse el material o los productos para producir otros materiales y se destinan a otras finalidades, como el aprovechamiento energético.
+
+También es posible realizar un salvamento de componentes de ciertos productos complejos, ya sea por su valor intrínseco o por su naturaleza peligrosa.</h2></div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Aplicacion Tres,MALT</h4>
+      </div>
+     </div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Reciclaje</h1>
+<div>
+<p>Esta es la imagen de reciclaje</p>
+</div>
+<div>
+<img src="imagenes/cuidaelmedio.jpg" width="50%" height="50%"/>
+</div>
+</div>
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Reciclar</h1>
+<div>
+<p>Esta es la imagen de reciclaje</p>
+</div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/reciclaje.jpg',1)"><img src="imagenes/reciclar.jpg" width="600" height="270" id="Image13"></a></div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Como controlar la contaminacion</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Metodos para combatirla:Una de las maneras para que esto pare es el reciclaje ya que gracias a esto la basura reducira asi tambien como crear campañas de reforestacion o de otra forma el crear grupos para recoger basura,evitar el uso de automoviles.
+    <ol type="1">
+    <ul><a href="http://www.greenpeace.org/espana/es/" target="_self">Greenpeace</a></ul>
+    <ul><a href="http://www.wwf.es/" target="_self">WWF</a></ul>
+    <ul><a href="http://www.earthaction.org/" target="_self">Earth Action</a></ul>
+    <ul><a href="https://www.nature.org/?redirect=https-301">The Nature Conservancy</a></ul>
+</ol type></h2>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres, MALT</h4>
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Metodos</h1>
+<div>
+<p>Esta es la imagen del como combatirlas</p>
+</div>
+<div>
+<img src="imagenes/combatir.jpg" width="50%" height="50%"/>
+	</div>
+	</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Metodos de combatirlos</h1>
+<div>
+<p>Esta es la imagen del como combatirlas</p>
+</div>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/reforestar.jpg',1)"><img src="imagenes/taladearboles.jpg" width="1200" height="630" id="Image14"></a></div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Contaminacion en mi entorno</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>El problema que se puede ver en mi comunidad es que las calles estan llenas de basura,tambien como la quema de los arboles cabe mencionar que tambien el uso de automoviles ya que este es el mayor contaminante</h2>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Aplicacion Tres, MALT</h4>
+</div>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Mi entorno</h1>
+<div>
+<p>Esta es la imagen de mi entorno</p>
+<img src="imagenes/comunidad.jpg" width="50%" height="50%"/>
+</div>
+</div>
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Mi entorno</h1>
+<div>
+<p>Esta es la imagen de mi entorno</p>
+</div>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/parapente.jpg',1)"><img src="imagenes/mientorno.jpg" width="1024" height="768" id="Image23"></a></div>
+</div>
+</div>
+
+
+</body>
+</html>
